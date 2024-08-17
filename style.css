@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width:100vw;
+    height:100vh;
+    background-color: cadetblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    line-height: 25px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+}
+.container header{
+    background:linear-gradient(to right,red,blue);
+    width:100%;
+    height:150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}.container header p{
+    margin:20px 0;
+    color: #fff;
+}
+section.about-me{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    
+}
+.images img{
+    width:150px;
+    object-fit: cover;
+    height:auto
+}
+ section.sec_a {
+     text-align: center;
+     margin: 20px 0;
+     
+ }.sec_a i {
+    font-size: 24px;
+    margin-right: 8px;
+    color: #0077b5;
+    /* LinkedIn Blue */
+}
+
+ section.sec_a a {
+     text-decoration: none;
+     margin: 10px 0;
+     color:blue;
+     font-weight: bold;
+ }
+
+ section.sec_b h2 {
+     margin: 15px 0;
+     text-align: center;
+     margin-bottom: 30px;
+ }
+
+ section.sec_b ul {
+     display: flex;
+     justify-content: space-around;
+     list-style-type: none;
+     padding: 0;
+ }
+
+ section.sec_b ul li {
+     margin-right: 15px;
+     animation: bounce 3s infinite;
+ }.scrollImages {
+    overflow: hidden;
+    width: 100vw;
+    margin: 20px 0;
+    position: relative;
+}
+
+.scrollImages .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: scroll 50s linear infinite;
+    width: calc(100vw * 1);
+    /* Adjust depending on the number of images */
+}
+
+.scrollImages img {
+    width: 150px;
+    /* Adjust as needed */
+    height: auto;
+    margin-right: 20px;
+}
+ form.FoRm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+input {
+    width: 50%;
+    height: 45px;
+    border-radius: 10px;
+    outline: none;
+
+    border:none
+}
+
+textarea {
+    width: 50%;
+    height: 150px;
+    border-radius: 10px;
+    outline: none;
+    
+}
+textarea::placeholder{
+    padding: 20px 1px;
+}.button {
+    width: 10%;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    color:rgb(255 255 255);
+    background-color: black;
+}
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.dark-mode{
+    background-color: black;
+    color:#fff;
+}
+button#toggle-dark-mode{
+    margin: 25px 0;
+    cursor: pointer;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(to right,red,blue);
+    color: white;
+    width: 100%;
+}
